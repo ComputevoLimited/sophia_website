@@ -1,0 +1,37 @@
+<svg width="560" height="680" viewBox="0 0 560 680" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="0" width="560" height="680" fill="#faf8f4"/>
+  <g fill="#c2703d">
+    <circle cx="280" cy="160" r="5" transform="rotate(0 280 230)"/>
+    <circle cx="280" cy="160" r="5" transform="rotate(25.7 280 230)"/>
+    <circle cx="280" cy="160" r="5" transform="rotate(51.4 280 230)"/>
+    <circle cx="280" cy="160" r="5" transform="rotate(77.1 280 230)"/>
+    <circle cx="280" cy="160" r="5" transform="rotate(102.9 280 230)"/>
+    <circle cx="280" cy="160" r="5" transform="rotate(128.6 280 230)"/>
+    <circle cx="280" cy="160" r="5" transform="rotate(154.3 280 230)"/>
+    <circle cx="280" cy="160" r="5" transform="rotate(180 280 230)"/>
+    <circle cx="280" cy="160" r="5" transform="rotate(205.7 280 230)"/>
+    <circle cx="280" cy="160" r="5" transform="rotate(231.4 280 230)"/>
+    <circle cx="280" cy="160" r="5" transform="rotate(257.1 280 230)"/>
+    <circle cx="280" cy="160" r="5" transform="rotate(282.9 280 230)"/>
+    <circle cx="280" cy="160" r="5" transform="rotate(308.6 280 230)"/>
+    <circle cx="280" cy="160" r="5" transform="rotate(334.3 280 230)"/>
+  </g>
+  <g stroke="#1a1a1a" stroke-width="2" stroke-linecap="round">
+    <line x1="270" y1="200" x2="270" y2="208"/>
+    <line x1="290" y1="200" x2="290" y2="208"/>
+    <line x1="270" y1="252" x2="270" y2="260"/>
+    <line x1="290" y1="252" x2="290" y2="260"/>
+    <line x1="250" y1="220" x2="258" y2="220"/>
+    <line x1="250" y1="240" x2="258" y2="240"/>
+    <line x1="302" y1="220" x2="310" y2="220"/>
+    <line x1="302" y1="240" x2="310" y2="240"/>
+  </g>
+  <rect x="258" y="208" width="44" height="44" rx="8" fill="#4f46e5"/>
+  <rect x="266" y="216" width="28" height="28" rx="3" fill="none" stroke="#ffffff" stroke-width="1.5" stroke-opacity="0.6"/>
+  <text x="280" y="390" text-anchor="middle" font-family="'Space Grotesk', sans-serif" font-weight="500" font-size="34" letter-spacing="6" fill="#1a1a1a">SOPHIA</text>
+  <text x="280" y="416" text-anchor="middle" font-family="'Space Grotesk', sans-serif" font-weight="400" font-size="12" fill="#6b6b6b">society for AI impact observation</text>
+  <text x="280" y="632" text-anchor="middle" font-family="'Space Grotesk', sans-serif" font-weight="400" font-size="12" fill="#8a8a85">
+    <tspan x="280" dy="0">Ring badge — humans as a surrounding circle, AI as the</tspan>
+    <tspan x="280" dy="18">chip at the center; literal and easy to recognize small.</tspan>
+  </text>
+</svg>

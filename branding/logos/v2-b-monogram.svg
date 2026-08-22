@@ -1,0 +1,12 @@
+<svg width="560" height="680" viewBox="0 0 560 680" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="0" width="560" height="680" fill="#faf8f4"/>
+  <rect x="210" y="110" width="140" height="140" rx="28" fill="#1a1a1a"/>
+  <text x="280" y="196" text-anchor="middle" dominant-baseline="middle" font-family="'Space Grotesk', sans-serif" font-weight="600" font-size="84" fill="#ffffff">S</text>
+  <circle cx="333" cy="133" r="7" fill="#4f46e5"/>
+  <text x="280" y="390" text-anchor="middle" font-family="'Space Grotesk', sans-serif" font-weight="500" font-size="34" letter-spacing="6" fill="#1a1a1a">SOPHIA</text>
+  <text x="280" y="416" text-anchor="middle" font-family="'Space Grotesk', sans-serif" font-weight="400" font-size="12" fill="#6b6b6b">society for AI impact observation</text>
+  <text x="280" y="632" text-anchor="middle" font-family="'Space Grotesk', sans-serif" font-weight="400" font-size="12" fill="#8a8a85">
+    <tspan x="280" dy="0">Monogram — bold single-letter badge that scales</tspan>
+    <tspan x="280" dy="18">well as an app icon; less descriptive alone.</tspan>
+  </text>
+</svg>

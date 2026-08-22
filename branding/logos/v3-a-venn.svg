@@ -1,0 +1,19 @@
+<svg width="560" height="680" viewBox="0 0 560 680" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="0" width="560" height="680" fill="#faf8f4"/>
+  <circle cx="242" cy="225" r="62" fill="#c2703d" fill-opacity="0.92"/>
+  <circle cx="318" cy="225" r="62" fill="#4f46e5" fill-opacity="0.92"/>
+  <circle cx="215" cy="205" r="9" fill="#ffffff" fill-opacity="0.95"/>
+  <path d="M198,238 Q198,214 215,214 Q232,214 232,238 Z" fill="#ffffff" fill-opacity="0.95"/>
+  <line x1="335" y1="200" x2="355" y2="215" stroke="#ffffff" stroke-width="2" stroke-opacity="0.95"/>
+  <line x1="355" y1="215" x2="340" y2="232" stroke="#ffffff" stroke-width="2" stroke-opacity="0.95"/>
+  <line x1="340" y1="232" x2="335" y2="200" stroke="#ffffff" stroke-width="2" stroke-opacity="0.95"/>
+  <circle cx="335" cy="200" r="4" fill="#ffffff" fill-opacity="0.95"/>
+  <circle cx="355" cy="215" r="4" fill="#ffffff" fill-opacity="0.95"/>
+  <circle cx="340" cy="232" r="4" fill="#ffffff" fill-opacity="0.95"/>
+  <text x="280" y="390" text-anchor="middle" font-family="'Space Grotesk', sans-serif" font-weight="500" font-size="34" letter-spacing="6" fill="#1a1a1a">SOPHIA</text>
+  <text x="280" y="416" text-anchor="middle" font-family="'Space Grotesk', sans-serif" font-weight="400" font-size="12" fill="#6b6b6b">society for AI impact observation</text>
+  <text x="280" y="632" text-anchor="middle" font-family="'Space Grotesk', sans-serif" font-weight="400" font-size="12" fill="#8a8a85">
+    <tspan x="280" dy="0">Venn — SOPHIA sits at the intersection of human</tspan>
+    <tspan x="280" dy="18">and AI; warm and cool tones name each side clearly.</tspan>
+  </text>
+</svg>
