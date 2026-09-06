@@ -1,0 +1,11 @@
+node_modules/
+.wrangler/
+.git/
+.github/
+.claude/
+.DS_Store
+.gitignore
+wrangler.jsonc
+package.json
+package-lock.json
+branding/

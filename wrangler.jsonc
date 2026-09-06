@@ -1,0 +1,10 @@
+{
+  "name": "sophia-website",
+  "compatibility_date": "2026-09-06",
+  "main": "src/worker.js",
+  "workers_dev": false,
+  "assets": {
+    "directory": ".",
+    "binding": "ASSETS"
+  }
+}
