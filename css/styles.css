@@ -211,11 +211,25 @@ a { color: inherit; text-decoration: none; }
 .btn-outline:hover { border-color: var(--gold-light); color: var(--gold-light); }
 
 .hero-mark {
+  position: relative;
   display: flex;
   justify-content: center;
 }
 
+.hero-mark::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 420px;
+  height: 420px;
+  transform: translate(-50%, -50%);
+  background: radial-gradient(circle, rgba(201,162,39,0.32) 0%, rgba(201,162,39,0.12) 45%, rgba(201,162,39,0) 72%);
+  pointer-events: none;
+}
+
 .hero-mark img {
+  position: relative;
   width: 260px;
   filter: drop-shadow(0 20px 40px rgba(0,0,0,0.35));
 }
