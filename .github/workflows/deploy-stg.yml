@@ -1,12 +1,12 @@
-name: Deploy Production
+name: Deploy Staging
 
 on:
   push:
-    branches: [dev]
+    branches: [stg]
 
 jobs:
   deploy:
-    name: Deploy to Cloudflare Workers
+    name: Deploy to Cloudflare Workers (Staging)
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
