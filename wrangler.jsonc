@@ -1,5 +1,5 @@
 {
-  "name": "sophia-website",
+  "name": "sophia-website-stg",
   "compatibility_date": "2026-09-06",
   "main": "src/worker.js",
   "workers_dev": true,
