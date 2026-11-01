@@ -3,123 +3,154 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title data-i18n="meta.title">SOPHIA — Society for the Observation of Public and Human Impacts of AI</title>
-  <meta name="description" content="SOPHIA monitors, assesses, and promotes public understanding of the impacts of Artificial Intelligence on society and individuals." data-i18n-attr="content:meta.description">
-  <link rel="icon" href="assets/images/logo-icon-light.png?v=2">
+  <title>SOPHIA — Society for the Observation of Public and Human Impacts of AI</title>
+  <meta name="description" content="SOPHIA monitors, assesses, and promotes public understanding of the impacts of Artificial Intelligence on society and individuals.">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap">
-  <link rel="stylesheet" href="css/styles.css?v=10">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400..700&family=Marcellus&family=Source+Serif+4:ital,opsz,wght@0,8..60,400..600;1,8..60,400&display=swap">
+  <link rel="stylesheet" href="css/styles.css?v=28">
 </head>
 <body>
 
+  <a class="skip-link" href="#main">Skip to content</a>
+
   <header class="site-header" id="site-header">
-    <div class="container">
-      <a href="#" class="brand">
-        <img src="assets/images/logo-icon-light.png?v=2" alt="SOPHIA logo">
-        <span class="brand-name">SOPHIA</span>
-      </a>
-      <nav>
+    <div class="container header-inner">
+      <a href="#top" class="wordmark" aria-label="SOPHIA">SOPHIA</a>
+      <nav class="primary-nav" aria-label="Primary">
         <ul class="nav-links">
-          <li><a href="#about" data-i18n="nav.about">About</a></li>
-          <li><a href="#principle" data-i18n="nav.principle">Principle of Wisdom</a></li>
-          <li><a href="#objectives" data-i18n="nav.objectives">Objectives</a></li>
-          <li><a href="#get-involved" data-i18n="nav.getInvolved">Get Involved</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#principle">Principle of Wisdom</a></li>
+          <li><a href="#objectives">Objectives</a></li>
+          <li><a href="#get-involved">Get Involved</a></li>
         </ul>
       </nav>
-      <div class="lang-switch" id="lang-switch" role="group" aria-label="Language">
-        <button type="button" data-lang="en" class="active">EN</button>
-        <button type="button" data-lang="el">ΕΛ</button>
-      </div>
       <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
     </div>
   </header>
 
-  <section class="hero">
-    <div class="container">
-      <h1 class="hero-headline" data-i18n="hero.eyebrow"><span class="ac">S</span>ociety for the <span class="ac">O</span>bservation of <span class="ac">P</span>ublic and <span class="ac">H</span>uman <span class="ac">I</span>mpacts of <span class="ac">A</span>I</h1>
-      <div class="hero-grid">
-        <div>
-          <p class="hero-subtitle" data-i18n="hero.title">Understanding what AI means for people and society</p>
-          <p class="hero-body" data-i18n="hero.body">SOPHIA monitors, assesses, and promotes understanding of the impacts of Artificial Intelligence on society and individuals — raising awareness of its risks and disseminating reliable, evidence-based information so people can make informed decisions about its use.</p>
-          <div class="hero-actions">
-            <a href="#get-involved" class="btn btn-gold" data-i18n="hero.ctaPrimary">Get Involved</a>
-            <a href="#about" class="btn btn-outline" data-i18n="hero.ctaSecondary">Learn More</a>
+  <main id="main">
+
+    <section class="hero" id="top">
+      <div class="hero-art" aria-hidden="true">
+        <svg viewBox="0 0 800 800" fill="none" stroke="currentColor" focusable="false">
+          <circle cx="400" cy="400" r="392" stroke-opacity="0.3"/>
+          <line x1="8" y1="400" x2="792" y2="400" stroke-opacity="0.16"/>
+          <line x1="400" y1="8" x2="400" y2="792" stroke-opacity="0.16"/>
+          <g class="spin spin-a">
+            <circle cx="400" cy="400" r="372" stroke-width="16" stroke-dasharray="1.6 17.878" stroke-opacity="0.5"/>
+            <circle cx="400" cy="400" r="364" stroke-opacity="0.3"/>
+          </g>
+          <g class="spin spin-b">
+            <circle cx="400" cy="400" r="300" stroke-width="24" stroke-dasharray="2 50.36" stroke-opacity="0.5"/>
+            <circle cx="400" cy="400" r="288" stroke-opacity="0.3"/>
+            <line x1="400" y1="400" x2="620" y2="400" stroke-opacity="0.25"/>
+            <circle cx="620" cy="400" r="70" stroke-opacity="0.32"/>
+            <circle cx="620" cy="330" r="5" fill="currentColor" stroke="none" fill-opacity="0.75"/>
+          </g>
+          <g class="spin spin-c">
+            <circle cx="400" cy="400" r="190" stroke-opacity="0.34"/>
+            <circle cx="400" cy="400" r="150" stroke-width="1" stroke-dasharray="3 9" stroke-opacity="0.4"/>
+            <circle class="planet" cx="590" cy="400" r="7" stroke="none"/>
+          </g>
+          <circle cx="400" cy="400" r="24" stroke-opacity="0.4"/>
+          <circle cx="400" cy="400" r="4" fill="currentColor" stroke="none" fill-opacity="0.8"/>
+        </svg>
+      </div>
+      <div class="container">
+        <h1 class="hero-title">
+          <span class="hero-wordmark">SOPHIA</span>
+        </h1>
+        <div class="hero-grid">
+          <p class="hero-subtitle">Understanding what AI means for people and society</p>
+          <div class="hero-copy">
+            <p class="hero-body">SOPHIA monitors, assesses, and promotes understanding of the impacts of Artificial Intelligence on society and individuals — raising awareness of its risks and disseminating reliable, evidence-based information so people can make informed decisions about its use.</p>
+            <div class="hero-actions">
+              <a href="#get-involved" class="btn btn-primary">Get Involved</a>
+              <a href="#about" class="btn btn-outline">Learn More</a>
+            </div>
           </div>
         </div>
-        <div class="hero-mark">
-          <img src="assets/images/logo-full-dark.png?v=2" alt="SOPHIA emblem">
+      </div>
+    </section>
+
+    <section class="section about" id="about">
+      <div class="container split">
+        <div class="split-head reveal">
+          <p class="eyebrow">Our Aim</p>
+          <h2 class="section-title">Evidence-based understanding of AI's impact</h2>
+        </div>
+        <p class="lede reveal delay-1">The aim of the Association is to monitor, assess, and promote understanding of the impacts of Artificial Intelligence (AI) on society and individuals. In pursuing this aim, the Association seeks to raise awareness of the risks and impacts associated with AI and to disseminate reliable, evidence-based information that enables individuals and society to make informed decisions regarding its use.</p>
+      </div>
+    </section>
+
+    <section class="section principle" id="principle">
+      <div class="container">
+        <p class="eyebrow reveal">The Principle of Wisdom (SOPHIA)</p>
+        <blockquote class="big-quote reveal delay-1">&ldquo;Wisdom is rooted in truth, experience, deep understanding, and sound judgment.&rdquo;</blockquote>
+        <div class="principle-body reveal delay-2">
+          <p>The Association is founded upon the belief that wisdom is rooted in truth, experience, deep understanding, and sound judgment.</p>
+          <p>By promoting a clear understanding of the impacts of Artificial Intelligence (AI) on individuals and society, SOPHIA seeks to equip individuals, institutions, and communities with the knowledge necessary to make informed decisions for the benefit of present and future generations.</p>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="about" id="about">
-    <div class="container">
-      <div class="section-eyebrow" data-i18n="about.eyebrow">Our Aim</div>
-      <h2 class="section-title" data-i18n="about.title">Evidence-based understanding of AI's impact</h2>
-      <p data-i18n="about.body">The aim of the Association is to monitor, assess, and promote understanding of the impacts of Artificial Intelligence (AI) on society and individuals. In pursuing this aim, the Association seeks to raise awareness of the risks and impacts associated with AI and to disseminate reliable, evidence-based information that enables individuals and society to make informed decisions regarding its use.</p>
-    </div>
-  </section>
-
-  <section class="principle" id="principle">
-    <div class="container">
-      <blockquote data-i18n="principle.quote">&ldquo;Wisdom is rooted in truth, experience, deep understanding, and sound judgment.&rdquo;</blockquote>
-      <div class="body-text">
-        <div class="section-eyebrow" data-i18n="principle.eyebrow">The Principle of Wisdom (SOPHIA)</div>
-        <p data-i18n="principle.body1">The Association is founded upon the belief that wisdom is rooted in truth, experience, deep understanding, and sound judgment.</p>
-        <p data-i18n="principle.body2">By promoting a clear understanding of the impacts of Artificial Intelligence (AI) on individuals and society, SOPHIA seeks to equip individuals, institutions, and communities with the knowledge necessary to make informed decisions for the benefit of present and future generations.</p>
+    <section class="section objectives" id="objectives">
+      <div class="container split">
+        <div class="split-head sticky reveal">
+          <p class="eyebrow">Objectives</p>
+          <h2 class="section-title">To achieve its aim, the Association shall</h2>
+        </div>
+        <ol class="objective-list">
+          <li class="reveal">
+            <span class="objective-number" aria-hidden="true">01</span>
+            <p>Monitor and assess the impacts of Artificial Intelligence on individuals, society, and key societal sectors, with particular attention to emerging risks and challenges.</p>
+          </li>
+          <li class="reveal">
+            <span class="objective-number" aria-hidden="true">02</span>
+            <p>Conduct and promote research on the impacts of Artificial Intelligence across key societal sectors, including education, healthcare, employment, media, tourism, psychology, and other fields of public interest.</p>
+          </li>
+          <li class="reveal">
+            <span class="objective-number" aria-hidden="true">03</span>
+            <p>Raise public awareness and understanding of the impacts and risks associated with Artificial Intelligence through publications, educational initiatives, conferences, seminars, workshops, and other awareness-raising activities.</p>
+          </li>
+          <li class="reveal">
+            <span class="objective-number" aria-hidden="true">04</span>
+            <p>Facilitate dialogue and collaboration among researchers, professionals, public authorities, educational institutions, civil society organisations, industry, and other relevant stakeholders to promote informed discussion and knowledge exchange on the impacts of Artificial Intelligence.</p>
+          </li>
+        </ol>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="objectives" id="objectives">
-    <div class="container">
-      <div class="section-eyebrow" data-i18n="objectives.eyebrow">Objectives</div>
-      <h2 class="section-title" data-i18n="objectives.title">To achieve its aim, the Association shall</h2>
-      <div class="objectives-grid">
-        <div class="objective-card">
-          <span class="objective-number">01</span>
-          <p data-i18n="objectives.item1">Monitor and assess the impacts of Artificial Intelligence on individuals, society, and key societal sectors, with particular attention to emerging risks and challenges.</p>
+    <section class="section get-involved" id="get-involved">
+      <div class="container cta">
+        <div class="cta-head reveal">
+          <p class="eyebrow">Get Involved</p>
+          <h2 class="section-title">Join the conversation on AI and society</h2>
         </div>
-        <div class="objective-card">
-          <span class="objective-number">02</span>
-          <p data-i18n="objectives.item2">Conduct and promote research on the impacts of Artificial Intelligence across key societal sectors, including education, healthcare, employment, media, tourism, psychology, and other fields of public interest.</p>
-        </div>
-        <div class="objective-card">
-          <span class="objective-number">03</span>
-          <p data-i18n="objectives.item3">Raise public awareness and understanding of the impacts and risks associated with Artificial Intelligence through publications, educational initiatives, conferences, seminars, workshops, and other awareness-raising activities.</p>
-        </div>
-        <div class="objective-card">
-          <span class="objective-number">04</span>
-          <p data-i18n="objectives.item4">Facilitate dialogue and collaboration among researchers, professionals, public authorities, educational institutions, civil society organisations, industry, and other relevant stakeholders to promote informed discussion and knowledge exchange on the impacts of Artificial Intelligence.</p>
+        <div class="cta-body reveal delay-1">
+          <p>Researchers, educators, policymakers, and civil society partners are welcome to reach out about membership, collaboration, or partnership opportunities.</p>
+          <a href="mailto:[CONTACT EMAIL]" class="btn btn-primary">Contact Us</a>
+          <p class="placeholder-note">[Add contact email, address, and social links here]</p>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="get-involved" id="get-involved">
-    <div class="container">
-      <div class="section-eyebrow" data-i18n="getInvolved.eyebrow">Get Involved</div>
-      <h2 class="section-title" data-i18n="getInvolved.title">Join the conversation on AI and society</h2>
-      <p data-i18n="getInvolved.body">Researchers, educators, policymakers, and civil society partners are welcome to reach out about membership, collaboration, or partnership opportunities.</p>
-      <a href="mailto:[CONTACT EMAIL]" class="btn btn-gold" data-i18n="getInvolved.cta">Contact Us</a>
-      <div class="placeholder-note" data-i18n="getInvolved.placeholder">[Add contact email, address, and social links here]</div>
-    </div>
-  </section>
+  </main>
 
   <footer class="site-footer">
-    <div class="container">
+    <div class="container footer-inner">
       <div class="footer-brand">
-        <img src="assets/images/logo-icon-dark.png?v=2" alt="SOPHIA logo">
-        <span data-i18n="footer.fullName">SOPHIA — Society for the Observation of Public and Human Impacts of AI</span>
+        <span class="wordmark wordmark-sm">SOPHIA</span>
+        <span class="footer-name">Society for the Observation of Public and Human Impacts of AI</span>
       </div>
-      <small data-i18n="footer.rights">&copy; 2026 SOPHIA. All rights reserved.</small>
+      <small>&copy; 2026 SOPHIA. All rights reserved.</small>
     </div>
   </footer>
 
-  <script src="js/i18n.js?v=3"></script>
-  <script src="js/main.js?v=2"></script>
+  <script src="js/main.js?v=3"></script>
 </body>
 </html>

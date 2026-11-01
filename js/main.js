@@ -12,3 +12,20 @@ document.querySelectorAll('.nav-links a').forEach((link) => {
     navToggle.setAttribute('aria-expanded', 'false');
   });
 });
+
+// Fade sections in as they scroll into view; without IntersectionObserver everything stays visible
+if ('IntersectionObserver' in window) {
+  document.documentElement.classList.add('js');
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      // Items already scrolled past (e.g. after an anchor jump) are revealed too
+      if (entry.isIntersecting || entry.boundingClientRect.top < 0) {
+        entry.target.classList.add('is-visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.12, rootMargin: '0px 0px -6% 0px' });
+
+  document.querySelectorAll('.reveal').forEach((el) => observer.observe(el));
+}
