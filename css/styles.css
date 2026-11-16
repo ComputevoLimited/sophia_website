@@ -1,8 +1,9 @@
 :root {
-  /* Palette: three colours only, a deep navy, ghost white and one neon accent (navy on neon passes AA) */
+  /* Palette: a deep navy, ghost white and the gold from the SOPHIA logo (navy on gold passes AA) */
   --navy: #092742;
   --white: #fefffa;
-  --neon: #d5f605;
+  --gold: #cba34d;
+  --beige: #eadab5; /* soft tint of the gold, for one calm band */
 
   /* Tints of those colours for secondary text and rules */
   --text-muted: #4a5f73;
@@ -42,7 +43,7 @@ ol, ul { list-style: none; }
 }
 
 .principle :focus-visible,
-.site-footer :focus-visible { outline-color: var(--neon); }
+.site-footer :focus-visible { outline-color: var(--gold); }
 
 .container {
   max-width: var(--max-width);
@@ -119,7 +120,7 @@ ol, ul { list-style: none; }
 }
 
 .nav-links a:hover {
-  background: linear-gradient(transparent 58%, var(--neon) 58%);
+  background: linear-gradient(transparent 58%, var(--gold) 58%);
 }
 
 .nav-toggle {
@@ -156,12 +157,12 @@ ol, ul { list-style: none; }
 .btn:hover { transform: translateY(-1px); }
 
 .btn-primary {
-  background: var(--neon);
+  background: var(--gold);
   border-color: var(--navy);
   color: var(--navy);
 }
 
-.btn-primary:hover { background: var(--navy); color: var(--neon); }
+.btn-primary:hover { background: var(--navy); color: var(--gold); }
 
 .btn-outline {
   border-color: rgba(9, 39, 66, 0.45);
@@ -203,7 +204,7 @@ ol, ul { list-style: none; }
   height: 100%;
 }
 
-.hero-art .planet { fill: var(--neon); stroke: var(--navy); stroke-width: 2; }
+.hero-art .planet { fill: var(--gold); stroke: var(--navy); stroke-width: 2; }
 
 .spin {
   transform-origin: 400px 400px;
@@ -277,9 +278,9 @@ ol, ul { list-style: none; }
   color: var(--navy);
 }
 
-/* Highlighter mark behind a word (on light surfaces) and neon text (on navy) */
-.hl { background: linear-gradient(transparent 62%, var(--neon) 62%); }
-.accent { color: var(--neon); }
+/* Highlighter mark behind a word (on light surfaces) and gold text (on navy) */
+.hl { background: linear-gradient(transparent 62%, var(--gold) 62%); }
+.accent { color: var(--gold); }
 
 .hero-body {
   max-width: 56ch;
@@ -304,7 +305,7 @@ section[id] { scroll-margin-top: calc(var(--header-h) - 1px); }
   display: inline-block;
   margin-bottom: 16px;
   padding: 5px 10px 4px;
-  background: var(--neon);
+  background: var(--gold);
   font-size: 12.5px;
   font-weight: 700;
   letter-spacing: 0.2em;
@@ -397,7 +398,7 @@ section[id] { scroll-margin-top: calc(var(--header-h) - 1px); }
   align-self: start;
   justify-self: start;
   padding: 0.14em 0.24em 0.08em;
-  background: var(--neon);
+  background: var(--gold);
   font-family: var(--font-serif);
   font-size: clamp(1.7rem, 3vw, 2.5rem);
   font-weight: 500;
@@ -406,7 +407,7 @@ section[id] { scroll-margin-top: calc(var(--header-h) - 1px); }
   transition: background-color 0.2s ease, color 0.2s ease;
 }
 
-.objective-list li:hover .objective-number { background: var(--navy); color: var(--neon); }
+.objective-list li:hover .objective-number { background: var(--navy); color: var(--gold); }
 
 .objective-list p {
   max-width: 58ch;
@@ -418,7 +419,7 @@ section[id] { scroll-margin-top: calc(var(--header-h) - 1px); }
 
 /* Get involved */
 .get-involved {
-  background: var(--neon);
+  background: var(--beige);
   color: var(--navy);
 }
 
@@ -433,12 +434,12 @@ section[id] { scroll-margin-top: calc(var(--header-h) - 1px); }
 
 .get-involved .eyebrow {
   background: var(--navy);
-  color: var(--neon);
+  color: var(--gold);
 }
 
 .get-involved .btn-primary {
   background: var(--navy);
-  color: var(--neon);
+  color: var(--gold);
 }
 
 .get-involved .btn-primary:hover {
