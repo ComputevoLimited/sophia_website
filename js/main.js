@@ -52,6 +52,7 @@ if (contactForm) {
     consent: 'Please tick the box so we can reply to you.',
   };
   const thanks = 'Thank you. Your message has been sent and we will reply as soon as we can.';
+  const notConnected = 'This form is not connected to an inbox yet, so your message was not sent.';
 
   const setError = (field, text) => {
     const error = document.getElementById(`${field.id}-error`);
@@ -101,12 +102,19 @@ if (contactForm) {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(data),
       });
-      if (!response.ok) throw new Error(`Request failed with status ${response.status}`);
+      if (!response.ok) {
+        const failure = new Error(`Request failed with status ${response.status}`);
+        // The Worker has no /api/contact yet: say so, instead of a vague "try again"
+        failure.notConnected = [404, 405, 501].includes(response.status);
+        throw failure;
+      }
       contactForm.reset();
       status.textContent = thanks;
     } catch (error) {
       status.classList.add('is-error');
-      status.textContent = 'Sorry, your message could not be sent. Please try again in a moment.';
+      status.textContent = error.notConnected
+        ? notConnected
+        : 'Sorry, your message could not be sent. Please try again in a moment.';
     } finally {
       submitButton.disabled = false;
     }

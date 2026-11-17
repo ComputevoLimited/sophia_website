@@ -6,13 +6,11 @@
   --beige: #eadab5; /* soft tint of the gold, for one calm band */
 
   /* Tints of those colours for secondary text and rules */
-  --on-dark: #fefffa;
   --on-dark-muted: #d3dfeb;
   --line: rgba(9, 63, 109, 0.18);
   --error: #8a1c1c; /* form errors only */
 
   /* Type */
-  --font-wordmark: 'Marcellus', 'Source Serif 4', Georgia, serif;
   --font-serif: 'Source Serif 4', Georgia, 'Times New Roman', serif;
   --font-sans: 'Manrope', system-ui, -apple-system, 'Segoe UI', sans-serif;
 
@@ -65,17 +63,6 @@ ol, ul { list-style: none; }
 }
 
 .skip-link:focus { top: 12px; }
-
-/* Wordmark */
-.wordmark {
-  font-family: var(--font-wordmark);
-  font-size: 20px;
-  line-height: 1;
-  letter-spacing: 0.34em;
-  text-transform: uppercase;
-  color: var(--blue);
-  white-space: nowrap;
-}
 
 /* Header */
 .brand { display: flex; align-items: center; }
@@ -592,8 +579,6 @@ section[id] { scroll-margin-top: calc(var(--header-h) - 1px); }
   padding: 56px 0 44px;
 }
 
-.site-footer .wordmark { color: var(--on-dark); }
-
 .footer-inner {
   display: flex;
   align-items: flex-end;
@@ -608,12 +593,26 @@ section[id] { scroll-margin-top: calc(var(--header-h) - 1px); }
   gap: 14px;
 }
 
-.wordmark-sm { font-size: 18px; }
-
 .footer-name {
+  display: flex;
+  align-items: center;
+  gap: 12px;
   max-width: 64ch;
   font-size: 14px;
   line-height: 1.6;
+}
+
+/* The six letters that spell SOPHIA inside the full name */
+.footer-name .initial {
+  font-weight: 700;
+  color: var(--gold);
+}
+
+/* Small eye from the logo, kept well below the size of the wordmark */
+.footer-eye {
+  flex: none;
+  width: 34px;
+  height: auto;
 }
 
 .site-footer small { font-size: 13px; }
@@ -671,7 +670,6 @@ section[id] { scroll-margin-top: calc(var(--header-h) - 1px); }
 
 /* Phone */
 @media (max-width: 720px) {
-  .wordmark { font-size: 17px; }
   .field-row { grid-template-columns: minmax(0, 1fr); }
   .form-actions .btn { width: 100%; }
   .footer-legal { flex-direction: column; }
