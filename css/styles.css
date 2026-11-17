@@ -1,15 +1,14 @@
 :root {
-  /* Palette: a deep navy, ghost white and the gold from the SOPHIA logo (navy on gold passes AA) */
-  --navy: #092742;
+  /* Palette: the SOPHIA logo's blue, ghost white and champagne gold (blue on champagne gold passes AA) */
+  --blue: #093f6d; /* the one blue (a step darker than the logo's): text, buttons, labels, bands, lines */
   --white: #fefffa;
-  --gold: #cba34d;
+  --gold: #dfc590; /* champagne gold */
   --beige: #eadab5; /* soft tint of the gold, for one calm band */
 
   /* Tints of those colours for secondary text and rules */
-  --text-muted: #4a5f73;
   --on-dark: #fefffa;
-  --on-dark-muted: #c3ccd6;
-  --line: rgba(9, 39, 66, 0.14);
+  --on-dark-muted: #d3dfeb;
+  --line: rgba(9, 63, 109, 0.18);
 
   /* Type */
   --font-wordmark: 'Marcellus', 'Source Serif 4', Georgia, serif;
@@ -29,7 +28,7 @@ body {
   font-size: 17px;
   line-height: 1.7;
   background: var(--white);
-  color: var(--navy);
+  color: var(--blue);
   -webkit-font-smoothing: antialiased;
 }
 
@@ -38,7 +37,7 @@ a { color: inherit; text-decoration: none; }
 ol, ul { list-style: none; }
 
 :focus-visible {
-  outline: 2px solid var(--navy);
+  outline: 2px solid var(--blue);
   outline-offset: 3px;
 }
 
@@ -57,7 +56,7 @@ ol, ul { list-style: none; }
   top: -64px;
   z-index: 200;
   padding: 10px 16px;
-  background: var(--navy);
+  background: var(--blue);
   color: var(--white);
   font-size: 14px;
   font-weight: 700;
@@ -73,7 +72,7 @@ ol, ul { list-style: none; }
   line-height: 1;
   letter-spacing: 0.34em;
   text-transform: uppercase;
-  color: var(--navy);
+  color: var(--blue);
   white-space: nowrap;
 }
 
@@ -123,7 +122,7 @@ ol, ul { list-style: none; }
   font-weight: 600;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: var(--navy);
+  color: var(--blue);
   border-bottom: 1px solid transparent;
   transition: color 0.2s ease, border-color 0.2s ease;
 }
@@ -145,7 +144,7 @@ ol, ul { list-style: none; }
 .nav-toggle span {
   width: 24px;
   height: 2px;
-  background: var(--navy);
+  background: var(--blue);
 }
 
 /* Buttons */
@@ -160,6 +159,7 @@ ol, ul { list-style: none; }
   line-height: 1;
   letter-spacing: 0.1em;
   text-transform: uppercase;
+  cursor: pointer;
   transition: transform 0.15s ease, background-color 0.15s ease, color 0.15s ease, border-color 0.15s ease;
 }
 
@@ -167,18 +167,18 @@ ol, ul { list-style: none; }
 
 .btn-primary {
   background: var(--gold);
-  border-color: var(--navy);
-  color: var(--navy);
+  border-color: var(--blue);
+  color: var(--blue);
 }
 
-.btn-primary:hover { background: var(--navy); color: var(--gold); }
+.btn-primary:hover { background: var(--blue); color: var(--gold); }
 
 .btn-outline {
-  border-color: rgba(9, 39, 66, 0.45);
-  color: var(--navy);
+  border-color: rgba(9, 63, 109, 0.55);
+  color: var(--blue);
 }
 
-.btn-outline:hover { background: var(--navy); border-color: var(--navy); color: var(--white); }
+.btn-outline:hover { background: var(--blue); border-color: var(--blue); color: var(--white); }
 
 /* Hero */
 .hero {
@@ -186,7 +186,7 @@ ol, ul { list-style: none; }
   overflow: hidden;
   isolation: isolate;
   background: var(--white);
-  color: var(--navy);
+  color: var(--blue);
   border-bottom: 1px solid var(--line);
   padding: clamp(72px, 10vw, 128px) 0 clamp(72px, 9vw, 120px);
 }
@@ -197,11 +197,11 @@ ol, ul { list-style: none; }
 .hero-art {
   position: absolute;
   top: -8%;
-  right: -10%;
+  right: -5%;
   z-index: 0;
   width: min(72vw, 900px);
   aspect-ratio: 1 / 1;
-  color: var(--navy);
+  color: var(--blue);
   pointer-events: none;
   -webkit-mask-image: radial-gradient(closest-side, #000 62%, transparent 100%);
   mask-image: radial-gradient(closest-side, #000 62%, transparent 100%);
@@ -213,7 +213,7 @@ ol, ul { list-style: none; }
   height: 100%;
 }
 
-.hero-art .planet { fill: var(--gold); stroke: var(--navy); stroke-width: 2; }
+.hero-art .planet { fill: var(--gold); stroke: var(--blue); stroke-width: 2; }
 
 .spin {
   transform-origin: 400px 400px;
@@ -275,7 +275,7 @@ ol, ul { list-style: none; }
   align-items: start;
   margin-top: clamp(56px, 8vw, 104px);
   padding-top: 48px;
-  border-top: 1px solid rgba(9, 39, 66, 0.2);
+  border-top: 1px solid rgba(9, 63, 109, 0.24);
 }
 
 .hero-subtitle {
@@ -284,11 +284,11 @@ ol, ul { list-style: none; }
   font-weight: 400;
   line-height: 1.18;
   letter-spacing: -0.01em;
-  color: var(--navy);
+  color: var(--blue);
 }
 
-/* Highlighter mark behind a word (on light surfaces) and gold text (on navy) */
-.hl { background: linear-gradient(transparent 62%, var(--gold) 62%); }
+/* Highlighter mark behind a word (on light surfaces) and gold text (on blue) */
+.hl { background: linear-gradient(transparent 54%, var(--gold) 54%); }
 .accent { color: var(--gold); }
 
 .hero-body {
@@ -296,7 +296,7 @@ ol, ul { list-style: none; }
   margin-bottom: 32px;
   font-size: 18px;
   line-height: 1.75;
-  color: var(--text-muted);
+  color: var(--blue);
 }
 
 .hero-actions {
@@ -313,13 +313,14 @@ section[id] { scroll-margin-top: calc(var(--header-h) - 1px); }
 .eyebrow {
   display: inline-block;
   margin-bottom: 16px;
-  padding: 5px 10px 4px;
+  padding: 4px 9px 3px;
   background: var(--gold);
+  border: 1px solid var(--blue);
   font-size: 12.5px;
   font-weight: 700;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  color: var(--navy);
+  color: var(--blue);
 }
 
 .section-title {
@@ -328,7 +329,7 @@ section[id] { scroll-margin-top: calc(var(--header-h) - 1px); }
   font-weight: 500;
   line-height: 1.15;
   letter-spacing: -0.015em;
-  color: var(--navy);
+  color: var(--blue);
   text-wrap: balance;
 }
 
@@ -353,26 +354,33 @@ section[id] { scroll-margin-top: calc(var(--header-h) - 1px); }
   font-size: clamp(1.25rem, 2vw, 1.6rem);
   font-weight: 400;
   line-height: 1.6;
-  color: var(--navy);
+  color: var(--blue);
 }
 
 /* The full name that SOPHIA stands for: semi-bold with a gold highlighter mark, kept across line breaks */
 .aim-name {
   font-weight: 600;
-  background: linear-gradient(transparent 62%, var(--gold) 62%);
+  background: linear-gradient(transparent 54%, var(--gold) 54%);
   -webkit-box-decoration-break: clone;
   box-decoration-break: clone;
 }
 
-/* Principle of Wisdom */
+/* Principle of SOPHIA */
 .principle {
-  background: var(--navy);
+  background: var(--blue);
   color: var(--white);
+}
+
+/* Quote on the left, the two paragraphs stacked on the right */
+.principle-split {
+  display: grid;
+  grid-template-columns: minmax(0, 6fr) minmax(0, 5fr);
+  gap: clamp(32px, 6vw, 96px);
+  align-items: center;
 }
 
 .big-quote {
   max-width: 24ch;
-  margin-bottom: clamp(40px, 6vw, 72px);
   font-family: var(--font-serif);
   font-size: clamp(1.9rem, 4.4vw, 3.6rem);
   font-style: italic;
@@ -385,15 +393,13 @@ section[id] { scroll-margin-top: calc(var(--header-h) - 1px); }
 
 .principle-body {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 24px 48px;
-  max-width: 980px;
-  padding-top: 40px;
-  border-top: 1px solid rgba(254, 255, 250, 0.25);
+  gap: 24px;
+  padding-left: clamp(24px, 4vw, 56px);
+  border-left: 1px solid rgba(254, 255, 250, 0.25);
 }
 
 .principle-body p {
-  font-size: 17px;
+  font-size: 18px;
   line-height: 1.75;
   color: var(--on-dark-muted);
 }
@@ -416,28 +422,29 @@ section[id] { scroll-margin-top: calc(var(--header-h) - 1px); }
   justify-self: start;
   padding: 0.14em 0.24em 0.08em;
   background: var(--gold);
+  border: 1px solid var(--blue);
   font-family: var(--font-serif);
   font-size: clamp(1.7rem, 3vw, 2.5rem);
   font-weight: 500;
   line-height: 1;
-  color: var(--navy);
+  color: var(--blue);
   transition: background-color 0.2s ease, color 0.2s ease;
 }
 
-.objective-list li:hover .objective-number { background: var(--navy); color: var(--gold); }
+.objective-list li:hover .objective-number { background: var(--blue); color: var(--gold); }
 
 .objective-list p {
   max-width: 58ch;
   padding-top: 0.3em;
   font-size: 18px;
   line-height: 1.75;
-  color: var(--navy);
+  color: var(--blue);
 }
 
 /* Get involved */
 .get-involved {
   background: var(--beige);
-  color: var(--navy);
+  color: var(--blue);
 }
 
 .cta {
@@ -450,37 +457,38 @@ section[id] { scroll-margin-top: calc(var(--header-h) - 1px); }
 .get-involved .section-title { font-size: clamp(2.1rem, 4.4vw, 3.6rem); }
 
 .get-involved .eyebrow {
-  background: var(--navy);
+  background: var(--blue);
   color: var(--gold);
 }
 
 .get-involved .btn-primary {
-  background: var(--navy);
+  background: var(--blue);
   color: var(--gold);
 }
 
 .get-involved .btn-primary:hover {
-  background: var(--white);
-  color: var(--navy);
+  background: var(--gold);
+  color: var(--blue);
 }
 
-.cta-body p:first-child {
-  margin-bottom: 32px;
+.cta-lede {
+  max-width: 44ch;
+  margin-top: 24px;
   font-size: 18px;
   line-height: 1.7;
-  color: var(--navy);
+  color: var(--blue);
 }
 
 .placeholder-note {
   margin-top: 20px;
   font-size: 13.5px;
   font-style: italic;
-  color: var(--navy);
+  color: var(--blue);
 }
 
 /* Footer */
 .site-footer {
-  background: var(--navy);
+  background: var(--blue);
   color: var(--on-dark-muted);
   padding: 56px 0 44px;
 }
@@ -523,7 +531,14 @@ section[id] { scroll-margin-top: calc(var(--header-h) - 1px); }
 @media (max-width: 960px) {
   .split,
   .cta,
+  .principle-split,
   .hero-grid { grid-template-columns: minmax(0, 1fr); }
+
+  .principle-body {
+    padding: 32px 0 0;
+    border-left: 0;
+    border-top: 1px solid rgba(254, 255, 250, 0.25);
+  }
 
   .split-head.sticky { position: static; }
 
@@ -560,7 +575,6 @@ section[id] { scroll-margin-top: calc(var(--header-h) - 1px); }
   .wordmark { font-size: 17px; }
   .footer-legal { flex-direction: column; }
   .footer-legal .sep { display: none; }
-  .principle-body { grid-template-columns: minmax(0, 1fr); }
   .objective-list li { padding: 28px 0; }
   .hero-actions .btn { flex: 1 1 auto; text-align: center; }
   .hero-art { top: 0; right: -45%; width: 130vw; opacity: 0.7; }
