@@ -86,6 +86,15 @@ ol, ul { list-style: none; }
   height: 40px;
 }
 
+/* The hero already shows the logo, so the header copy appears only after the hero logo scrolls away */
+.brand { transition: opacity 0.3s ease, visibility 0.3s; }
+
+.js .site-header:not(.show-brand) .brand {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
 .site-header {
   position: sticky;
   top: 0;
@@ -345,6 +354,14 @@ section[id] { scroll-margin-top: calc(var(--header-h) - 1px); }
   font-weight: 400;
   line-height: 1.6;
   color: var(--navy);
+}
+
+/* The full name that SOPHIA stands for: semi-bold with a gold highlighter mark, kept across line breaks */
+.aim-name {
+  font-weight: 600;
+  background: linear-gradient(transparent 62%, var(--gold) 62%);
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
 }
 
 /* Principle of Wisdom */

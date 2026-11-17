@@ -28,4 +28,12 @@ if ('IntersectionObserver' in window) {
   }, { threshold: 0.12, rootMargin: '0px 0px -6% 0px' });
 
   document.querySelectorAll('.reveal').forEach((el) => observer.observe(el));
+
+  // Show the small header logo only once the big hero logo has scrolled out of view
+  const heroLogo = document.querySelector('.hero-logo');
+  if (heroLogo) {
+    new IntersectionObserver(([entry]) => {
+      header.classList.toggle('show-brand', !entry.isIntersecting && entry.boundingClientRect.top < 0);
+    }, { rootMargin: `-${header.offsetHeight}px 0px 0px 0px` }).observe(heroLogo);
+  }
 }
