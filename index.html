@@ -12,7 +12,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400..700&family=Marcellus&family=Source+Serif+4:ital,opsz,wght@0,8..60,400..600;1,8..60,400&display=swap">
-  <link rel="stylesheet" href="css/styles.css?v=46">
+  <link rel="stylesheet" href="css/styles.css?v=47">
 </head>
 <body>
 
@@ -137,10 +137,53 @@
           <h2 class="section-title">Join the conversation on AI and society</h2>
           <p class="cta-lede">Researchers, educators, policymakers, and civil society partners are welcome to reach out about membership, collaboration, or partnership opportunities.</p>
         </div>
-        <div class="cta-body reveal delay-1">
-          <a href="mailto:[CONTACT EMAIL]" class="btn btn-primary">Contact Us</a>
-          <p class="placeholder-note">[Add contact email, address, and social links here]</p>
-        </div>
+        <form class="contact-form reveal delay-1" id="contact-form" action="/api/contact" method="post" novalidate>
+          <div class="field-row">
+            <div class="field">
+              <label for="cf-name">Full name&nbsp;<span aria-hidden="true">*</span></label>
+              <input id="cf-name" name="name" type="text" autocomplete="name" maxlength="120" required aria-describedby="cf-name-error">
+              <p class="field-error" id="cf-name-error" hidden></p>
+            </div>
+            <div class="field">
+              <label for="cf-email">Email&nbsp;<span aria-hidden="true">*</span></label>
+              <input id="cf-email" name="email" type="email" autocomplete="email" maxlength="200" required aria-describedby="cf-email-error">
+              <p class="field-error" id="cf-email-error" hidden></p>
+            </div>
+          </div>
+          <div class="field-row">
+            <div class="field">
+              <label for="cf-organisation">Organisation</label>
+              <input id="cf-organisation" name="organisation" type="text" autocomplete="organization" maxlength="160">
+            </div>
+            <div class="field">
+              <label for="cf-topic">Topic</label>
+              <select id="cf-topic" name="topic">
+                <option>General enquiry</option>
+                <option>Membership</option>
+                <option>Collaboration</option>
+                <option>Partnership</option>
+              </select>
+            </div>
+          </div>
+          <div class="field">
+            <label for="cf-message">Message&nbsp;<span aria-hidden="true">*</span></label>
+            <textarea id="cf-message" name="message" rows="6" minlength="10" maxlength="4000" required aria-describedby="cf-message-error"></textarea>
+            <p class="field-error" id="cf-message-error" hidden></p>
+          </div>
+          <div class="field field-check">
+            <input id="cf-consent" name="consent" type="checkbox" required aria-describedby="cf-consent-error">
+            <label for="cf-consent">I agree that SOPHIA may use these details to reply to my message.&nbsp;<span aria-hidden="true">*</span></label>
+            <p class="field-error" id="cf-consent-error" hidden></p>
+          </div>
+          <div class="hp" aria-hidden="true">
+            <label for="cf-website">Leave this field empty</label>
+            <input id="cf-website" name="website" type="text" tabindex="-1" autocomplete="off">
+          </div>
+          <div class="form-actions">
+            <button type="submit" class="btn btn-primary">Send message</button>
+            <p class="form-status" id="cf-status" role="status" aria-live="polite"></p>
+          </div>
+        </form>
       </div>
     </section>
 
@@ -162,6 +205,6 @@
     </div>
   </footer>
 
-  <script src="js/main.js?v=8"></script>
+  <script src="js/main.js?v=9"></script>
 </body>
 </html>
