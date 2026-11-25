@@ -12,6 +12,7 @@ Map: [README.md](README.md). Full older detail: [RELEASES_ARCHIVE.md](RELEASES_A
 
 | Date | Commit | What changed |
 |------|--------|--------------|
+| 2026-11-25 | `5c3f847` | No visible change for visitors. Project docs and tests added; `src/`, `docs/`, `tests/` and `CLAUDE.md` are now kept off the public site (the Worker source `src/worker.js` had been downloadable); GitHub also runs the tests on pull requests. |
 | 2026-11-25 | `320fb89` | Header is now a blue bar with white menu, a light small logo and a champagne line, so it stands out from the page below. |
 | 2026-11-17 | `ebb9676` | Contact form shown on the page (front end only; says "not connected" when sent); footer reduced to a small eye beside the full name, the letters S-O-P-H-I-A highlighted. Came with `443f3a5` (the form code). |
 | 2026-11-17 | `3733269` | One blue everywhere; "Wisdom" renamed SOPHIA; Principle section layout (quote left, paragraphs right); the logo's eye as tab icon; stronger hero instrument; champagne tags with a blue outline. |
